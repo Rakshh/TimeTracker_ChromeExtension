@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Timer Extension</title>
+    <style>
+      body { width: 300px; padding: 10px; font-family: Arial, sans-serif; }
+      #timer { font-size: 36px; text-align: center; margin: 20px 0; }
+      button { width: 100%; padding: 10px; margin: 5px 0; }
+    </style>
+  </head>
+  <body>
+    <h1>Timer Extension</h1>
+    <div id="timer">00:00:00</div>
+    <input type="number" id="hours" placeholder="Hours" min="0" max="23">
+    <input type="number" id="minutes" placeholder="Minutes" min="0" max="59">
+    <input type="number" id="seconds" placeholder="Seconds" min="0" max="59">
+    <button id="startTimer">Start Timer</button>
+    <button id="stopTimer">Stop Timer</button>
+    <script src="popup.js"></script>
+  </body>
+</html>

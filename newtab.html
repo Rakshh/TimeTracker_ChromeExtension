@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Every Second Matters, make it worth it!!!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-image: url('icon.png');
+            background-size: cover;
+            background-position: left;
+            background-repeat: no-repeat;
+        }
+        .container {
+            text-align: center;
+            background-color: rgba(218, 213, 213, 0.8); /* semi-transparent white */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        #timer {
+            font-size: 48px;
+            margin: 20px 0;
+        }
+        input {
+            width: 50px;
+            margin: 5px;
+        }
+        button {
+            margin: 10px;
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Every Second Matters Rakshit, make it worth it!!!</h1>
+        <div id="timer">00:00:00</div>
+        <div>
+            <input type="number" id="years" placeholder="Years" min="0" value="50">
+            <input type="number" id="days" placeholder="Days" min="0" max="364" value="0">
+            <input type="number" id="hours" placeholder="Hours" min="0" max="23" value="0">
+            <input type="number" id="minutes" placeholder="Minutes" min="0" max="59" value="0">
+            <input type="number" id="seconds" placeholder="Seconds" min="0" max="59" value="0">
+            <button id="notificationPermission">Enable Notifications</button>
+        </div>
+        <button id="startTimer">Start Timer</button>
+        <button id="stopTimer">Stop Timer</button>
+    </div>
+    <script src="newtab.js"></script>
+</body>
+</html>

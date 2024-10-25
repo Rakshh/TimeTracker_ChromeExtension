@@ -1,0 +1,26 @@
+{
+    "manifest_version": 3,
+    "name": "New Tab Timer Extension",
+    "version": "1.0",
+    "description": "A timer extension that replaces the new tab page",
+    "background": {
+      "service_worker": "background.js"
+    },
+    "chrome_url_overrides": {
+      "newtab": "newtab.html"
+    },
+    "permissions": [
+      "alarms",
+      "storage"
+    ],
+    "optional_permissions": [
+      "notifications"
+    ],
+    "action": {
+      "default_icon": "icon.png"
+    },
+    "web_accessible_resources": [{
+      "resources": ["background.jpg"],
+      "matches": ["<all_urls>"]
+    }]
+  }
